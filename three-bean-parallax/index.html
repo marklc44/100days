@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>Super Simple Parallax Demo</title>
+	<style>
+		body {
+			margin:0;
+			padding:0;
+		}
+		.parallax {
+			position:relative;
+			margin:0;
+			padding:0;
+			width:100%;
+			height:2000px;
+		}
+
+		.text {
+			position:absolute;
+			top:100px;
+			left:100px;
+			font-family:sans-serif;
+			font-size:2em;
+			z-index:99999;
+		}
+		.bean {
+			background-image:url(img/bean.png);
+			background-size:cover;
+		}
+		#bean-fg {
+			position:absolute;
+			top:100px;
+			left:400px;
+			width:100px;
+			height:157px;
+			z-index:999999;
+		}
+		#bean-mg {
+			position:absolute;
+			top:300px;
+			left:200px;
+			width:75px;
+			height:118px;
+			z-index:99999;
+		}
+		#bean-bg {
+			position:absolute;
+			top:325px;
+			left:300px;
+			width:50px;
+			height:79px;
+			z-index:9999;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="parallax">
+		<div id="bean-fg" class="bean bean-fg"></div>
+		<div id="bean-mg" class="bean bean-mg"></div>
+		<div id="bean-bg" class="bean bean-bg"></div>
+		<div class="text">
+			<h1>Fake title</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus nisi diam. Proin dolor nunc, feugiat vel dictum sed, suscipit at enim. In hac habitasse platea dictumst. Nullam tempus mauris vel nisl posuere, ut laoreet massa tristique. Morbi id consectetur lacus, eget volutpat odio.</p>
+
+			<h1>Fake title</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus nisi diam. Proin dolor nunc, feugiat vel dictum sed, suscipit at enim. In hac habitasse platea dictumst. Nullam tempus mauris vel nisl posuere, ut laoreet massa tristique. Morbi id consectetur lacus, eget volutpat odio.</p>
+
+			<h1>Fake title</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus nisi diam. Proin dolor nunc, feugiat vel dictum sed, suscipit at enim. In hac habitasse platea dictumst. Nullam tempus mauris vel nisl posuere, ut laoreet massa tristique. Morbi id consectetur lacus, eget volutpat odio.</p>
+
+			<h1>Fake title</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus nisi diam. Proin dolor nunc, feugiat vel dictum sed, suscipit at enim. In hac habitasse platea dictumst. Nullam tempus mauris vel nisl posuere, ut laoreet massa tristique. Morbi id consectetur lacus, eget volutpat odio.</p>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.10.2.js"></script>
+	<script>
+
+	(function($) {
+
+		var fg = document.getElementById('bean-fg');
+		var mg = document.getElementById('bean-mg');
+		var bg = document.getElementById('bean-bg');
+		var thingBeingScrolled = document.body;
+
+		var top;
+
+		var render = function() {
+
+			//top of the document
+			top = thingBeingScrolled.scrollTop;
+
+			//scroll either faster or slower than the top of the document
+			fg.style.webkitTransform = "translate3d(0px," + top * 1.25 + "px,0px)";
+			mg.style.webkitTransform = "translate3d(0px," + top * .8 + "px,0px)";
+			bg.style.webkitTransform = "translate3d(0px," + top * .5 + "px,0px)";
+		};
+
+		(function loop() {
+			requestAnimationFrame(loop);
+			render();
+		})();
+
+	})(jQuery);
+
+	</script>
+</body>
+</html>

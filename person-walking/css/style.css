@@ -1,0 +1,196 @@
+#stage {
+	position:relative;
+	background:url(../images/bg-double.jpg) -1372px 0 no-repeat;
+	width:800px;
+	height:600px;
+	overflow:hidden;
+	margin:0 auto;
+	overflow:hidden;
+	border-radius:30px;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	-o-border-radius:30px;
+	-ms-border-radius:30px;
+	animation: bg 6s linear 0s infinite;
+	-webkit-animation: bg 6s linear 0s infinite;
+	-moz-animation: bg 6s linear 0s infinite;
+	-o-animation: bg 6s linear 0s infinite;
+	-ms-animation: bg 6s linear 0s infinite;
+}
+
+#right-leg {
+	position: absolute;
+	top:413px;
+	left:400px;
+	animation: right-leg 0.5s linear 0s infinite alternate;
+	-webkit-animation: right-leg 0.5s linear 0s infinite alternate;
+	-moz-animation: right-leg 0.5s linear 0s infinite alternate;
+	-o-animation: right-leg 0.5s linear 0s infinite alternate;
+	-ms-animation: right-leg 0.5s linear 0s infinite alternate;
+}
+#right-arm {
+	position: absolute;
+	top:330px;
+	left:421px;
+	animation: right-arm 0.5s linear 0s infinite alternate;
+	-webkit-animation: right-arm 0.5s linear 0s infinite alternate;
+	-moz-animation: right-arm 0.5s linear 0s infinite alternate;
+	-o-animation: right-arm 0.5s linear 0s infinite alternate;
+	-ms-animation: right-arm 0.5s linear 0s infinite alternate;
+}
+#torso {
+	position: absolute;
+	top:283px;
+	left:410px;
+	animation: torso 0.25s linear 0s infinite alternate;
+	-webkit-animation: torso 0.25s linear 0s infinite alternate;
+	-moz-animation: torso 0.25s linear 0s infinite alternate;
+	-o-animation: torso 0.25s linear 0s infinite alternate;
+	-ms-animation: torso 0.25s linear 0s infinite alternate;
+}
+#left-leg {
+	position: absolute;
+	top:413px;
+	left:408px;
+	animation: left-leg 0.5s linear 0s infinite alternate;
+	-webkit-animation: left-leg 0.5s linear 0s infinite alternate;
+	-moz-animation: left-leg 0.5s linear 0s infinite alternate;
+	-o-animation: left-leg 0.5s linear 0s infinite alternate;
+	-ms-animation: left-leg 0.5s linear 0s infinite alternate;
+}
+#left-arm {
+	position: absolute;
+	top:330px;
+	left:424px;
+	animation: left-arm 0.5s linear 0s infinite alternate;
+	-webkit-animation: left-arm 0.5s linear 0s infinite alternate;
+	-moz-animation: left-arm 0.5s linear 0s infinite alternate;
+	-o-animation: left-arm 0.5s linear 0s infinite alternate;
+	-ms-animation: left-arm 0.5s linear 0s infinite alternate;
+}
+
+@keyframes left-leg {
+	from { transform: rotate(-10deg); transform-origin:top; }
+	to { transform: rotate(10deg); transform-origin:top; }
+}
+@-webkit-keyframes left-leg {
+	from { -webkit-transform: rotate(-10deg); -webkit-transform-origin:top;  }
+	to { -webkit-transform: rotate(10deg); -webkit-transform-origin:top;  }
+}
+@-moz-keyframes left-leg {
+	from { -moz-transform: rotate(-10deg); -moz-transform-origin:top;  }
+	to { -moz-transform: rotate(10deg); -moz-transform-origin:top;  }
+}
+@-o-keyframes left-leg {
+	from { -o-transform: rotate(-10deg); -o-transform-origin:top;  }
+	to { -o-transform: rotate(10deg); -o-transform-origin:top;  }
+}
+@-ms-keyframes left-leg {
+	from { -ms-transform: rotate(-10deg); -ms-transform-origin:top;  }
+	to { -ms-transform: rotate(10deg); -ms-transform-origin:top;  }
+}
+
+@keyframes right-leg {
+	from { transform: rotate(10deg); transform-origin:top; }
+	to { transform: rotate(-10deg); transform-origin:top; }
+}
+@-webkit-keyframes right-leg {
+	from { -webkit-transform: rotate(10deg); -webkit-transform-origin:top;  }
+	to { -webkit-transform: rotate(-10deg); -webkit-transform-origin:top;  }
+}
+@-moz-keyframes right-leg {
+	from { -moz-transform: rotate(10deg); -moz-transform-origin:top;  }
+	to { -moz-transform: rotate(-10deg); -moz-transform-origin:top;  }
+}
+@-o-keyframes right-leg {
+	from { -o-transform: rotate(10deg); -o-transform-origin:top;  }
+	to { -o-transform: rotate(-10deg); -o-transform-origin:top;  }
+}
+@-ms-keyframes right-leg {
+	from { -ms-transform: rotate(10deg); -ms-transform-origin:top;  }
+	to { -ms-transform: rotate(-10deg); -ms-transform-origin:top;  }
+}
+
+@keyframes right-arm {
+	from { transform: rotate(-10deg); transform-origin:top; }
+	to { transform: rotate(10deg); transform-origin:top; }
+}
+@-webkit-keyframes right-arm {
+	from { -webkit-transform: rotate(-10deg); -webkit-transform-origin:top;  }
+	to { -webkit-transform: rotate(10deg); -webkit-transform-origin:top;  }
+}
+@-moz-keyframes right-arm {
+	from { -moz-transform: rotate(-10deg); -moz-transform-origin:top;  }
+	to { -moz-transform: rotate(10deg); -moz-transform-origin:top;  }
+}
+@-o-keyframes right-arm {
+	from { -o-transform: rotate(-10deg); -o-transform-origin:top;  }
+	to { -o-transform: rotate(10deg); -o-transform-origin:top;  }
+}
+@-ms-keyframes right-arm {
+	from { -ms-transform: rotate(-10deg); -ms-transform-origin:top;  }
+	to { -ms-transform: rotate(10deg); -ms-transform-origin:top;  }
+}
+
+@keyframes left-arm {
+	from { transform: rotate(10deg); transform-origin:top; }
+	to { transform: rotate(-10deg); transform-origin:top; }
+}
+@-webkit-keyframes left-arm {
+	from { -webkit-transform: rotate(10deg); -webkit-transform-origin:top;  }
+	to { -webkit-transform: rotate(-10deg); -webkit-transform-origin:top;  }
+}
+@-moz-keyframes left-arm {
+	from { -moz-transform: rotate(10deg); -moz-transform-origin:top;  }
+	to { -moz-transform: rotate(-10deg); -moz-transform-origin:top;  }
+}
+@-o-keyframes left-arm {
+	from { -o-transform: rotate(10deg); -o-transform-origin:top;  }
+	to { -o-transform: rotate(-10deg); -o-transform-origin:top;  }
+}
+@-ms-keyframes left-arm {
+	from { -ms-transform: rotate(10deg); -ms-transform-origin:top;  }
+	to { -ms-transform: rotate(-10deg); -ms-transform-origin:top;  }
+}
+
+@keyframes torso {
+	from { transform: translateY(-2px); }
+	to { transform: rotate(2px); }
+}
+@-webkit-keyframes torso {
+	from { -webkit-transform: translateY(-2px); }
+	to { -webkit-transform: rotate(2px); }
+}
+@-moz-keyframes torso {
+	from { -moz-transform: translateY(-2px); }
+	to { -moz-transform: rotate(2px); }
+}
+@-o-keyframes torso {
+	from { -o-transform: translateY(-2px); }
+	to { -o-transform: rotate(2px); }
+}
+@-ms-keyframes torso {
+	from { -ms-transform: translateY(-2px); }
+	to { -ms-transform: rotate(2px); }
+}
+
+@keyframes bg {
+	from { background-position:-1372px 0; }
+	to { background-position:0 0; }
+}
+@-webkit-keyframes bg {
+	from { background-position:-1372px 0; }
+	to { background-position:0 0; }
+}
+@-moz-keyframes bg {
+	from { background-position:-1372px 0; }
+	to { background-position:0 0; }
+}
+@-o-keyframes bg {
+	from { background-position:-1372px 0; }
+	to { background-position:0 0; }
+}
+@-ms-keyframes bg {
+	from { background-position:-1372px 0; }
+	to { background-position:0 0; }
+}

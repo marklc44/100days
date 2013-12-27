@@ -1,0 +1,32 @@
+body {
+			margin:0;
+			padding:0;
+			text-align:center;
+			font-family:sans-serif;
+		}
+		.container {
+			width:100%;
+		}
+		.box {
+			text-align:left;
+			width:50%;
+			margin:2em auto;
+			padding:2%;
+			color:#999;
+			border:1px solid #999;
+			border-radius:10px;
+		}
+		.diagonal-bg {
+		    background:#fff;
+		}
+		.diagonal-bg:hover {
+		    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFF80), color-stop(0.22, #FFFF80), color-stop(0.22, #bbb), color-stop(0.25, #bbb), color-stop(0.25, #FFFF80), color-stop(0.47, #FFFF80), color-stop(0.47, #bbb), color-stop(0.5, #bbb), color-stop(0.5, #FFFF80), color-stop(0.72, #FFFF80), color-stop(0.72, #bbb), color-stop(0.75, #bbb), color-stop(0.75, #FFFF80), color-stop(0.97, #FFFF80), color-stop(0.97, #bbb));
+		    background-size: 30px 30px; 
+		    background-position:top left;
+		    -webkit-animation:slide-diags 25s linear infinite;
+		}
+		@-webkit-keyframes slide-diags 
+		{
+		    0% { background-position: 0 0;}
+		    100% { background-position: 100% 0;}
+		}
