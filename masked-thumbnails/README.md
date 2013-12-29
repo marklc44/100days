@@ -17,4 +17,4 @@ That site has a bounty of other animation goodies on page transitions and such, 
 
 Incidentally, this is the first project created on a Mac. Just picked up my shiny new Macbook Pro 15" yesterday and spent quite a few hours last night setting it all up for dev.
 
-5 days down, ~~95~~ 94 to go.
+~~5~~ 6 days down, ~~95~~ 94 to go.
