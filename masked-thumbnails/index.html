@@ -12,17 +12,29 @@
 		<h1>Masked Thumbnail List</h1>
 		<p>I liked the masking and hover effects on <a href="http://www.julienrenvoye.com/">http://www.julienrenvoye.com</a> and wanted to recreate it for practice. I'm a sucker for any shape that's not a square or a circle.</p>
 
-		<p>This miniproject presents a list of thumbnails as a grid, each masked by png shapes which expand when you hover over them. Nothing earth shattering. If you notice on the original site, all of the items other than the one hovered over get grayed out. That will be tomorrow's project.</p>
+		<p>This miniproject presents a list of thumbnails as a grid, each masked by png shapes which expand when you hover over them. Nothing earth shattering. If you notice on the original site, all of the items other than the one hovered over get grayed out. <span class="line-thru">That will be tomorrow's project.</span></p>
+
+		<p><strong>Added the grayed out effect as the project for 12/29/2013.</strong></p>
+
+		<p>To gray out the other elements:</p>
+		<ul>
+			<li>On hover, grab the <pre>src</pre> attribute of the <pre>img</pre> tag inside the element being hovered over.</li>
+			<li>For each thumbnail container on the page, compare its <pre>img</pre> tag's <pre>src</pre> attribute against the one being hovered.</li>
+			<li>If they are not equal, add css opacity of .5</li>
+			<li>On on mouse leave, reset opacity for all elements back to 1.</li>
+		</ul>
 		 
 		<p>That site has a bounty of other animation goodies on page transitions and such, so I may be stealing a few more projects from that font of inspiration.</p>
 
-		<p>5 days down, 95 to go.</p>
+		<p>5 days down, <span class="line-thru">95</span> 94 to go.</p>
 	</div>
 	<ul id="thumbs" class="tn-group">
 		<li>
 			<div class="tn-container">
 				<div class="mask"></div>
-				<img src="img/carefinder-screenshot.jpg">
+				<div class="img-container">
+					<img src="img/carefinder-screenshot.jpg">
+				</div>
 				<div class="tn-desc">
 					<h3>Carefinder</h3>
 					<p>Demo App/Website</p>
@@ -32,39 +44,42 @@
 		<li>
 			<div class="tn-container">
 				<div class="mask"></div>
-				<img src="img/carefinder-screenshot.jpg">
+				<div class="img-container">
+					<img src="img/terun-screenshot.jpg">
+				</div>
 				<div class="tn-desc">
-					<h3>Carefinder</h3>
-					<p>Demo App/Website</p>
+					<h3>Terun Pizza</h3>
+					<p>Website</p>
 				</div>
 			</div>
 		</li>
 		<li>
 			<div class="tn-container">
 				<div class="mask"></div>
-				<img src="img/carefinder-screenshot.jpg">
+				<div class="img-container">
+					<img src="img/landons-carnival-screenshot.jpg">
+				</div>
 				<div class="tn-desc">
-					<h3>Carefinder</h3>
-					<p>Demo App/Website</p>
+					<h3>Landon's Carnival</h3>
+					<p>Website</p>
 				</div>
 			</div>
 		</li>
 		<li>
 			<div class="tn-container">
 				<div class="mask"></div>
-				<img src="img/carefinder-screenshot.jpg">
+				<div class="img-container">
+					<img src="img/safety-email-screenshot1.jpg">
+				</div>
 				<div class="tn-desc">
-					<h3>Carefinder</h3>
-					<p>Demo App/Website</p>
+					<h3>Safety Email Template</h3>
+					<p>Email Template</p>
 				</div>
 			</div>
 		</li>
 	</ul>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>
-		
-
-	</script>
+	<script src="js/main.js"></script>
 
 </body>
 

@@ -20,6 +20,13 @@ body {
 			color:#ff9a25;
 			text-decoration: underline;
 		}
+		pre {
+			display:inline;
+			color:#fff;
+		}
+		.line-thru {
+			text-decoration: line-through;
+		}
 		.intro {
 			color:#ddd;
 			width:80%;
@@ -41,6 +48,10 @@ body {
 			position:relative;
 			width:220px;
 			height:340px;
+			-webkit-transition:all .25s ease 0;
+			-moz-transition:all .25 ease 0;
+			-ms-transition:all .25 ease 0;
+			transition:all .25 ease 0;
 		}
 		/*really jumpy animation with this transition*/
 		.tn-container div.mask {
@@ -53,19 +64,27 @@ body {
 			width:220px;
 			height:220px;
 			z-index: 999999;
-			transition:all .15s ease;
 			overflow:hidden;
+			-webkit-transition:all .25s ease;
+			-moz-transition:all .25s ease;
+			-ms-transition:all .25s ease;
+			transition:all .25s ease;
+			
 		}
 		.tn-container div.mask:hover {
 			cursor:pointer;
 			background-size:110%;
 		}
-		.tn-container img {
+		.tn-container .img-container {
 			position:absolute;
 			top:0;
 			left:0;
 			width:220px;
 			height:220px;
+			overflow:hidden;
+		}
+		.tn-container img {
+			width:440px;
 		}
 		.tn-container .tn-desc {
 			position:absolute;

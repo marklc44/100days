@@ -2,14 +2,16 @@ $(document).ready(function() {
 	var $tn_container = $('.tn-container');
 
 	$tn_container.hover(function() {
-		$current = $(this);
-		$tn_container.each(function(i,$el){
-			if($el != $current) {
-				//add semi-transparent mask to each of the above
-				$(this).append('<div class="faded"></div>')
+		var src = $(this).find('img').attr('src');
+
+		$tn_container.each(function(){
+			var check_src = $(this).find('img').attr('src');
+
+			if(check_src != src) {
+				$(this).css('opacity',0.5);
 			}
 		});
+	}, function() {
+		$tn_container.css('opacity',1);
 	});
 });
-
-//toggle off on mouseleave
