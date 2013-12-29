@@ -10,9 +10,18 @@ body {
 		}
 		h1 {
 			text-transform: uppercase;
+			color:#fff;
+		}
+		a {
+			color:#ffd44f;
+			text-decoration:none;
+		}
+		a:hover {
+			color:#ff9a25;
+			text-decoration: underline;
 		}
 		.intro {
-			color:#fff;
+			color:#ddd;
 			width:80%;
 			margin:2em auto;
 		}
