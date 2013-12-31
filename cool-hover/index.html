@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>Masked Thumnail List</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.fade-container {
+			position:relative;
+			width:80%;
+			height:400px;
+			margin:2em auto;
+			overflow:hidden;
+		}
+		.fade-from, .fade-to {
+			position:absolute;
+			top:0;
+			left:0;
+			width:80%;
+			height:400px;
+			padding:10%;
+		}
+		.fade-from {
+			background:url(img/stick.jpg);
+			background-size: cover;
+			opacity:1;
+			z-index: 99999;
+			-webkit-transition:all 1s ease 0;
+			-moz-transition:all 1s ease 0;
+			-ms-transition:all 1s ease 0;
+			transition:all 1s ease 0;
+		}
+		.fade-from:hover {
+			opacity:0;
+		}
+		.fade-to {
+			background:url(img/carefinder-screenshot.jpg);
+		}
+	</style>
+</head>
+<body>
+	<div class="intro">
+		<h1>Hover Fade Effect</h1>
+		<p>Hover over the image and opacity changes.</p>
+
+		<p>7 days down, 93 to go.</p>
+	</div>
+	<div class="fade-container">
+		<div class="fade-from">
+			<h2>Hi.</h2>
+			<p>Here's some text.</p>
+		</div>
+		<div class="fade-to">
+			<h2>Just kidding!</h2>
+			<p>Here's the real text.</p>
+		</div>
+	</div>
+	<ul id="thumbs" class="tn-group">
+		<li>
+			<div class="tn-container">
+				<div class="mask"></div>
+				<div class="img-container">
+					<img src="img/carefinder-screenshot.jpg">
+				</div>
+				<div class="tn-desc">
+					<h3>Carefinder</h3>
+					<p>Demo App/Website</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="tn-container">
+				<div class="mask"></div>
+				<div class="img-container">
+					<img src="img/terun-screenshot.jpg">
+				</div>
+				<div class="tn-desc">
+					<h3>Terun Pizza</h3>
+					<p>Website</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="tn-container">
+				<div class="mask"></div>
+				<div class="img-container">
+					<img src="img/landons-carnival-screenshot.jpg">
+				</div>
+				<div class="tn-desc">
+					<h3>Landon's Carnival</h3>
+					<p>Website</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="tn-container">
+				<div class="mask"></div>
+				<div class="img-container">
+					<img src="img/safety-email-screenshot1.jpg">
+				</div>
+				<div class="tn-desc">
+					<h3>Safety Email Template</h3>
+					<p>Email Template</p>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
