@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Simple Project Tracker</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="pure-g-r">
+		<header class="pure-u-1 page-header">
+			<div class="pure-menu pure-menu-open pure-menu-horizontal top-nav">
+				<a href="#" class="pure-menu-heading">MC Goals</a>
+			    <ul>
+			        <li class="pure-menu-selected"><a href="#">Coding</a></li>
+			        <li><a href="#">Health</a></li>
+			        <li><a href="#">Finance</a></li>
+			    </ul>
+			</div>
+		</header>
+		<section class="pure-u-1 content 1-box">
+			<div class="spacer">
+				<h2 class="page-title">100 Days of Front End Code</h2>
+				<ul id="results" class="calendar-grid">
+					<li>M</li>
+					<li>T</li>
+					<li>W</li>
+					<li>Th</li>
+					<li>F</li>
+					<li>S</li>
+					<li>Su</li>
+				</ul>
+		</div><!--end spacer-->
+		</section><!--end content-->
+		<footer></footer>
+	</div><!--end page-wrapper-->
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.2.1/handlebars.min.js"></script>
+	<script type="text/javascript">
+
+		var url = 'data/project-data.json';
+
+		$.ajax({
+			type: 'get',
+			url: url,
+			dataType: 'json',
+			success: displayProjectCalendar
+		});
+
+		function displayProjectCalendar(data) {
+			console.log(data);
+			var source = $('#projects-results-tpl').html();
+			var template = Handlebars.compile(source);
+			var context = data;
+			var html = template(context);
+			$('#results').append(html);
+		}
+
+
+	</script>
+	<script type="x-handlebars-template" id="projects-results-tpl">
+		{{#each projects}}
+		<li>
+			<a class="{{complete}}" href="#"></a>
+		</li>
+		{{/each}}
+	</script>
+</body>
+</html>

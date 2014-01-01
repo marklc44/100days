@@ -1,0 +1,46 @@
+
+.pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children {
+	background:#ccc;
+}
+.pure-menu-heading {
+
+}
+
+.pure-g-r .spacer {
+	margin:0 20px;
+}
+
+
+ul.calendar-grid {
+	width:80%;
+	margin:2em auto;
+	list-style-type: none;
+}
+ul.calendar-grid li {
+	position:relative;
+	list-style-type: none;
+	display:block;
+	width:13%;
+	height:2em;
+	margin:.14%;
+	float:left;
+	text-align:center;
+	color:#bbb;
+}
+ul.calendar-grid li a {
+	display:block;
+	height:100%;
+	width:100%;
+	background:#bbb;
+	color:#fff;
+}
+ul.calendar-grid li a:hover {
+	background:#ddd;
+}
+ul.calendar-grid li a.complete {
+	background:#36cb32;
+}
+ul.calendar-grid li a.complete:hover {
+	background:#39db36;
+}
+

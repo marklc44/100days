@@ -1,0 +1,104 @@
+{
+	"projects" : [
+		{
+			"id" : 1,
+			"title": "Person Walking CSS Animation",
+			"github_url" : "https://github.com/marklc44/100days/tree/master/person-walking",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "CSS animated person walking",
+			"complete" : "complete"
+		},
+		{
+			"id" : 2,
+			"title": "",
+			"github_url" : "",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "",
+			"complete" : ""
+		},
+		{
+			"id" : 2,
+			"title": "Flickr-like Parallax Scrolling",
+			"github_url" : "https://github.com/marklc44/100days/tree/master/flickr-home",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "Parallax scrolling like the Flickr home page",
+			"complete" : "complete"
+		},
+		{
+			"id" : 3,
+			"title": "Three Bean Parallax",
+			"github_url" : "https://github.com/marklc44/100days/tree/master/three-bean-parallax",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "Parallax scrolling with fore-, mid- and background images",
+			"complete" : "complete"
+		},
+		{
+			"id" : 4,
+			"title": "Marching Diagonal Lines",
+			"github_url" : "https://github.com/marklc44/100days/tree/master/marching-diags-bg",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "Hover effect with animated diagonal lines in the background",
+			"complete" : "complete"
+		},
+		{
+			"id" : 5,
+			"title": "Masked Thumbnails",
+			"github_url" : "https://github.com/marklc44/100days/tree/master/masked-thumbnails",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "Thumbnails with png shape masks that enlarge when hovered. The non-hovered thumbnails fade out slightly.",
+			"complete" : "complete"
+		},
+		{
+			"id" : 6,
+			"title": "Masked Thumbnails 2",
+			"github_url" : "https://github.com/marklc44/100days/tree/master/masked-thumbnails",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "On the same project as Masked Thumbnails, the non-hovered thumbnails fade out slightly.",
+			"complete" : "complete"
+		},
+		{
+			"id" : 7,
+			"title": "Hover Fade Swap",
+			"github_url" : "https://github.com/marklc44/100days/tree/master/cool-hover",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "Swapping images with a fade effect on hover",
+			"complete" : "complete"
+		},
+		{
+			"id" : 8,
+			"title": "Simple Project Tracker V1",
+			"github_url" : "",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "Reads project data from a json file of daily projects and displays a simple calendar checking off days toward 100 days of small front end projects.",
+			"complete" : "complete"
+		},
+		{
+			"id" : 9,
+			"title": "",
+			"github_url" : "",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "",
+			"complete" : ""
+		},
+		{
+			"id" : 10,
+			"title": "",
+			"github_url" : "",
+			"live_url" : "",
+			"image_url" : "",
+			"desc" : "",
+			"complete" : ""
+		}
+		
+	]
+}

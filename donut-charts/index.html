@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Playing around with Google Charts</title>
+	<link rel-"stylesheet" type="text/css" href="css/main.css" />
+	<style>
+		body {
+			margin:0;
+			padding:0;
+			font-family:sans-serif;
+		}
+
+	
+
+	</style>
+
+</head>
+<body>
+	<div id="donut-chart"></div>
+	
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script>
+		google.load('visualization', '1.0', {'packages':['corechart']});
+    
+    	google.setOnLoadCallback(drawDonutChart);
+
+    	function drawDonutChart() {
+    		var data = new google.visualization.DataTable();
+    		data.addColumn('string','Headings');
+    		data.addColumn('number','Values');
+    		data.addRows([
+    			['h1', 1],
+    			['h2', 2]
+    		]);
+
+    		var options = {
+    			'title': 'Sample Chart',
+    			'width': 400,
+    			'height': 400,
+    			pieHole: 0.5,
+    			pieSliceBorderColor: 'none',
+    			legend: {
+    				position: 'none'
+    			}
+    		};
+
+    		var chart = new google.visualization.PieChart(document.getElementById('donut-chart'));
+    		chart.draw(data, options);
+    	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Playing around with CSS charts</title>
+	<link rel-"stylesheet" type="text/css" href="css/main.css" />
+	<style>
+		body {
+			margin:0;
+			padding:0;
+			font-family:sans-serif;
+		}
+		.donut-chart-container {
+			width:90%;
+			margin:5% auto;
+			padding:5%;
+			text-align:center;
+		}
+		.donut-chart-container h3 {
+			margin-bottom:0;
+		}
+		.donut-chart-container h3 span {
+			font-weight:100;
+		}
+		.donut-chart {
+			background:radial-gradient(circle 200px, #444 0%, #444 50%, #666 50%, #666 100%);
+			background:linear-gradient(to right, #444 0%, #444 50%, #999 50%);
+			height:400px;
+			width:400px;
+			border-radius:200px;
+			margin:0 auto;
+		}
+		.donut-chart h4 {
+			font-size:12em;
+			margin:0;
+			line-height: 400px;
+			background: linear-gradient(to right, #999 0%, #999 49.5%, #444 49.5%);
+			-webkit-background-clip:text;
+			-webkit-text-fill-color:transparent;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="donut-chart-container">
+		<h3>Step 1: <span>Just make it look right</span></h3>
+		<div id="chart1" class="donut-chart">
+			<h4>2</h4>
+		</div>
+	</div>
+	
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+
+	</script>
+</body>
+</html>
