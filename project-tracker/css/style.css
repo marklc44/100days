@@ -47,4 +47,53 @@ ul.calendar-grid li.divider {
 	background:#fff;
 	width:100%;
 }
+.modal {
+	background:#fff;
+	position:absolute;
+	top:400px;
+	left:40%;
+	width:400px;
+	border:1px solid #999;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+}
+.hide {
+	display:none;
+}
+.modal .modal-header {
+	width:90%;
+	border-bottom:1px solid #bbb;
+	padding:5%;
+}
+.modal .modal-header h3 {
+	letter-spacing: 0;
+}
+.modal .modal-body {
+	width:90%;
+	padding:1em 5%;
+}
+.modal .pure-form-stacked {
+	margin:0 auto;
+}
+.modal .pure-form-stacked input {
+	margin-bottom:1em;
+	letter-spacing: 0;
+	float:none;
+}
+.modal .pure-form-stacked input[type=text], .modal .pure-form-stacked textarea {
+	width:80%;
+}
+.modal .pure-form-stacked label {
+	letter-spacing:0;
+	margin-bottom:2em;
+}
+.modal .modal-footer {
+	width:90%;
+	padding:1em 5%;
+	border-top:1px solid #bbb;
+	letter-spacing: 0;
+	text-align:right;
+}
 

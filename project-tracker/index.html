@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="pure-g-r">
+	<div class="pure-g-r page-wrapper">
 		<header class="pure-u-1 page-header">
 			<div class="pure-menu pure-menu-open pure-menu-horizontal top-nav">
 				<a href="#" class="pure-menu-heading">MC Goals</a>
@@ -19,6 +19,7 @@
 		<section class="pure-u-1 content 1-box">
 			<div class="spacer">
 				<h2 class="page-title">100 Days of Front End Code</h2>
+				<a id="new-project-button" class="pure-button" href="#">Add a Project</a>
 				<ul id="results" class="calendar-grid">
 					<li>M</li>
 					<li>T</li>
@@ -31,8 +32,32 @@
 		</div><!--end spacer-->
 		</section><!--end content-->
 		<footer></footer>
+		
 	</div><!--end page-wrapper-->
+	<div id="new-project-modal" class="modal hide">
+		<div class="modal-header">
+			<h3>Add a Project</h3>
+		</div>
+		<div class="modal-body">
+			<form class="pure-form pure-form-stacked" id="new_project_form" method="post">
+				<input type="text" id="title" placeholder="Title">
+				<input type="text" id="github_url" placeholder="Github URL">
+				<input type="text" id="live_url" placeholder="Live URL">
+				<input type="text" id="image_url" placeholder="Image URL">
+				<textarea id="desc" placeholder="Description"></textarea>
+				
+				<label for="complete">
+					<input type="checkbox" id="complete" name="complete" value="complete">
+					Is complete?
+				</label>
 
+				<input class="pure-button pure-button-primary" type="submit" id="submit_project" value="Add Project">
+			</form>
+		</div>
+		<div class="modal-footer">
+			<a id="new-project-modal-close" class="modal-close" href="#">cancel</a>
+		</div>
+	</div><!--end modal-->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.2.1/handlebars.min.js"></script>
 	<script type="text/javascript">
@@ -77,13 +102,25 @@
 		function insertDivider() {
 			$('#results li').each(function(i) {
 				if((i-6)%28 === 0 && i != 6) {
-					//insert divider
-					//don't know how to do that yet
 					$(this).after('<li class="divider"></li>');
 				}
 			});
 		}
+		$(document).ready(function() {
+			//open modal
+			$('#new-project-button').click(function(e) {
+				e.preventDefault();
+				$('#new-project-modal').removeClass('hide');
+				$('.page-wrapper').css('opacity', 0.5);
+			});
+			//close modal
+			$('.modal').find('.modal-close').click(function(e) {
+				e.preventDefault();
+				$('#new-project-modal').addClass('hide');
+				$('.page-wrapper').css('opacity', 1);
+			});
 
+		});
 
 	</script>
 	<script type="x-handlebars-template" id="projects-results-tpl">

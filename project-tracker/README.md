@@ -1,3 +1,16 @@
+#Simple Project Tracker 0.2.1
+
+Added new project form inside modal. It doesn't do anything yet, but I have a good understanding of how to create a modal without Bootstrap. I've also moved the project to a MAMP server so the ajax call works in Chrome.
+
+As the code grows, I can see how modular development can be very handy for organizing the parts. I haven't guite grokked Backbone yet, but I'll give a go toward splitting up and organizing the js, html and css in the next iteration.
+
+Down the line:
+Create an asset pipeline or use an AMD asset pipeline. 
+Use SASS and Backbone to speed and organize coding.
+
+10 days down 90 to go.
+
+
 #Simple Project Tracker 0.2
 
 Added function that fills in the remaining days from the last completed project to 100 days. Also added a divider every 28 days to separate each month.
