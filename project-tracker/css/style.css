@@ -43,4 +43,8 @@ ul.calendar-grid li a.complete {
 ul.calendar-grid li a.complete:hover {
 	background:#39db36;
 }
+ul.calendar-grid li.divider {
+	background:#fff;
+	width:100%;
+}
 

@@ -38,6 +38,7 @@
 	<script type="text/javascript">
 
 		var url = 'data/project-data.json';
+		var results;
 
 		$.ajax({
 			type: 'get',
@@ -53,6 +54,34 @@
 			var context = data;
 			var html = template(context);
 			$('#results').append(html);
+
+			writeEmptyItems(data);
+		}
+
+		function writeEmptyItems(obj) {
+			//var temp = JSON.parse(obj);
+			console.log(obj.projects.length);
+			var itemsToWrite = 100 - obj.projects.length;
+			var li = '<li><a href="#"></a></li>';
+			var i;
+			var output = li;
+
+			for(i=0;i<itemsToWrite;i++) {
+				output += li;
+			}
+
+			$('#results').append(output);
+			insertDivider();
+		}
+
+		function insertDivider() {
+			$('#results li').each(function(i) {
+				if((i-6)%28 === 0 && i != 6) {
+					//insert divider
+					//don't know how to do that yet
+					$(this).after('<li class="divider"></li>');
+				}
+			});
 		}
 
 

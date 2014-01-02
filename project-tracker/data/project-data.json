@@ -74,7 +74,7 @@
 		},
 		{
 			"id" : 8,
-			"title": "Simple Project Tracker V1",
+			"title": "Simple Project Tracker v0.1",
 			"github_url" : "",
 			"live_url" : "",
 			"image_url" : "",
@@ -83,21 +83,12 @@
 		},
 		{
 			"id" : 9,
-			"title": "",
-			"github_url" : "",
+			"title": "Simple Project Tracker v0.2",
+			"github_url" : "https://github.com/marklc44/100days/tree/master/project-tracker",
 			"live_url" : "",
 			"image_url" : "",
-			"desc" : "",
-			"complete" : ""
-		},
-		{
-			"id" : 10,
-			"title": "",
-			"github_url" : "",
-			"live_url" : "",
-			"image_url" : "",
-			"desc" : "",
-			"complete" : ""
+			"desc" : "Adds remaining incomplete days to 100 days project tracker",
+			"complete" : "complete"
 		}
 		
 	]
