@@ -50,8 +50,8 @@ ul.calendar-grid li.divider {
 .modal {
 	background:#fff;
 	position:absolute;
-	top:400px;
-	left:40%;
+	top:10%;
+	left:30%;
 	width:400px;
 	border:1px solid #999;
 	-webkit-border-radius:10px;
@@ -96,4 +96,16 @@ ul.calendar-grid li.divider {
 	letter-spacing: 0;
 	text-align:right;
 }
-
+.alert {
+	width:90%;
+	padding:5%;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+	color:#fff;
+	letter-spacing: 0;
+}
+.alert.alert-success {
+	background:#39db36;
+}
