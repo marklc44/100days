@@ -4,4 +4,4 @@ After spending the last 6 months studying web development at General Assembly ([
 
 This repo is filled with those small projects.
 
-11 days down, 89 to go.
+13 days down, 87 to go.
