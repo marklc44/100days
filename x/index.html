@@ -1,0 +1,148 @@
+<html>
+<head>
+	<title>Openable Content Panels</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link href='http://fonts.googleapis.com/css?family=Fugaz+One|Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<style>
+		*, *:before, *:after {
+		  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+		 }
+		body {
+			margin:0;
+			padding:0;
+			width:100%;
+		}
+		h1.brand {
+			font-family: 'Fugaz One', serif;
+			line-height:.5em;
+			font-size:1.5em;
+			color:rgb(22, 124, 128);
+			margin-left:5%;
+		}
+		h2 {
+			font-family:'Fugaz One', serif;
+		}
+		p {
+			font-family: 'Ozwald', sans-serif;
+		}
+		.page-wrapper {
+			position:relative;
+			padding:0;
+			margin:0;
+			width:100%;
+			height:100%;
+			overflow:hidden;
+		}
+		.top-nav {
+			position:absolute;
+			top:0;
+			left:0;
+			background:#eee;
+			width:100%;
+			height:3em;
+			z-index: 99999999;
+		}
+		.vertical-section {
+			width:calc(100% / 3);
+			height:800px;
+			float:left;
+			padding:5%;
+			z-index: 0;
+			-webkit-transition:all .5s ease .1s;
+			-moz-transition:all .5s ease .1s;
+			-ms-transition:all .5s ease .1s;
+			transition:all .5s ease .1s;
+		}
+		.vertical-section:hover{
+			width:35%;
+			z-index:999;
+		}
+		.vertical-section.open {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			z-index:99999;
+			-webkit-transition:all .5s ease .1s;
+			-moz-transition:all .5s ease .1s;
+			-ms-transition:all .5s ease .1s;
+			transition:all .5s ease .1s;
+		}
+		.left {
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		.center {
+			position:absolute;
+			top:0;
+			left:33.3%;
+		}
+		.right {
+			position:absolute;
+			top:0;
+			left:66.6%;
+		}
+		.lt-green {
+			background:rgb(162, 197, 191);
+			color:rgb(22, 124, 128);
+		}
+		.green {
+			background:rgb(22, 124, 128);
+			color:rgb(162, 197, 191);
+		}
+		.orange {
+			background:rgb(232, 132, 107);
+			color:rgb(178, 34, 34);
+		}
+
+			
+	</style>
+</head>
+<body>
+	<div class="page-wrapper">
+		<nav class="top-nav">
+			<h1 class="brand">Openable Content Panels</h1>
+		</nav>
+		<section id="about" class="vertical-section lt-green left openable">
+			<h2>About</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section id="projects" class="vertical-section orange center openable">
+		<h2>Projects</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section id="blog" class="vertical-section green right openable">
+			<h2>Blog</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$('.openable').click(function(e) {
+			e.preventDefault();
+			$this = $(this);
+			$this.toggleClass('open');
+		});
+	</script>
+
+</body>
+
+</html>
